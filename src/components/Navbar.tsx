@@ -37,16 +37,78 @@ export default function Navbar() {
                      aria-labelledby="hs-navbar-example-collapse">
                     <div
                         className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-                        <a className="font-medium text-blue-500 focus:outline-hidden" href="#"
-                           aria-current="page">Landing</a>
-                        <a className="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400"
-                           href="#">Account</a>
-                        <a className="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400"
-                           href="#">Work</a>
-                        <a className="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400"
-                           href="#">Blog</a>
                         <div className="relative hs-dropdown">
-                            <button id="hs-navbar-example-dropdown" type="button"
+                            <button id="hs-navbar-movies-dropdown" type="button"
+                                    className="hs-dropdown-toggle flex items-center w-full text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 font-medium"
+                                    aria-haspopup="menu" aria-expanded="false" aria-label="Mega Menu">
+                                Movies
+                                <svg
+                                    className="hs-dropdown-open:-rotate-180 sm:hs-dropdown-open:rotate-0 duration-300 ms-1 shrink-0 size-4"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
+                                    strokeLinejoin="round">
+                                    <path d="m6 9 6 6 6-6"/>
+                                </svg>
+                            </button>
+
+                            <div
+                                className="hs-dropdown-menu absolute top-full left-0 mt-2 transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-white sm:shadow-md rounded-lg p-1 space-y-1 border border-gray-200 hidden"
+                                role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-movies-dropdown">
+                                <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100"
+                                   href="#">
+                                    Popular
+                                </a>
+                                <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100"
+                                   href="#">
+                                    Now Playing
+                                </a>
+                                <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100"
+                                   href="#">
+                                    Upcoming
+                                </a>
+                                <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100"
+                                   href="#">
+                                    Top Rated
+                                </a>
+                            </div>
+                        </div>
+                        <div className="relative hs-dropdown">
+                            <button id="hs-navbar-tv-shows-dropdown" type="button"
+                                    className="hs-dropdown-toggle flex items-center w-full text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 font-medium"
+                                    aria-haspopup="menu" aria-expanded="false" aria-label="Mega Menu">
+                                TV Shows
+                                <svg
+                                    className="hs-dropdown-open:-rotate-180 sm:hs-dropdown-open:rotate-0 duration-300 ms-1 shrink-0 size-4"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
+                                    strokeLinejoin="round">
+                                    <path d="m6 9 6 6 6-6"/>
+                                </svg>
+                            </button>
+
+                            <div
+                                className="hs-dropdown-menu absolute top-full left-0 mt-2 transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-white sm:shadow-md rounded-lg p-1 space-y-1 border border-gray-200 hidden"
+                                role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-tv-shows-dropdown">
+                                <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100"
+                                   href="#">
+                                    Popular
+                                </a>
+                                <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100"
+                                   href="#">
+                                    Airing Today
+                                </a>
+                                <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100"
+                                   href="#">
+                                    On TV
+                                </a>
+                                <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100"
+                                       href="#">
+                                    Top Rated
+                                </a>
+                            </div>
+                        </div>
+                        <div className="relative hs-dropdown">
+                            <button id="hs-navbar-people-dropdown" type="button"
                                     className="hs-dropdown-toggle flex items-center w-full text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 font-medium"
                                     aria-haspopup="menu" aria-expanded="false" aria-label="Mega Menu">
                                 Dropdown
@@ -61,18 +123,10 @@ export default function Navbar() {
 
                             <div
                                 className="hs-dropdown-menu absolute top-full left-0 mt-2 transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-white sm:shadow-md rounded-lg p-1 space-y-1 border border-gray-200 hidden"
-                                role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-example-dropdown">
+                                role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-people-dropdown">
                                 <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100"
                                    href="#">
                                     About
-                                </a>
-                                <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100"
-                                   href="#">
-                                    Downloads
-                                </a>
-                                <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100"
-                                   href="#">
-                                    Team Account
                                 </a>
                             </div>
                         </div>
