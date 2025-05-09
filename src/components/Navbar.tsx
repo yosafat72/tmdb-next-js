@@ -111,7 +111,7 @@ export default function Navbar() {
                             <button id="hs-navbar-people-dropdown" type="button"
                                     className="hs-dropdown-toggle flex items-center w-full text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 font-medium"
                                     aria-haspopup="menu" aria-expanded="false" aria-label="Mega Menu">
-                                Dropdown
+                                People
                                 <svg
                                     className="hs-dropdown-open:-rotate-180 sm:hs-dropdown-open:rotate-0 duration-300 ms-1 shrink-0 size-4"
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -126,7 +126,7 @@ export default function Navbar() {
                                 role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-people-dropdown">
                                 <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100"
                                    href="#">
-                                    About
+                                    Popular People
                                 </a>
                             </div>
                         </div>
