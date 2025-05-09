@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@floating-ui/dom": "^1.7.0",
     "@preline/collapse": "^3.0.0",
+    "@preline/dropdown": "^3.0.1",
     "datatables.net": "^2.3.0",
     "dropzone": "^6.0.0-beta.2",
     "jquery": "^3.7.1",
